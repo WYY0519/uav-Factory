@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/2.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>无人机管理平台--工厂端</title>
+
+    <!-- 2. Leaflet 核心资源（必须先加载，暴露全局`L`） -->
+    <!-- 2.1 Leaflet核心样式 -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <!-- 2.2 Leaflet核心JS（关键：这一步会在全局生成`L`对象） -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <!-- 3. Leaflet.draw 插件（依赖全局`L`，必须在核心之后加载） -->
+    <!-- 3.1 draw插件样式 -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css"
+    />
+    <!-- 3.2 draw插件JS（此时`L`已存在，不会报错） -->
+    <script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
+    <!-- （可选）draw插件中文语言包 -->
+    <!-- <script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw-lang.zh-CN.js"></script> -->
+
+    <!-- 4. 其他工具库（Vue、VLC等，顺序不影响Leaflet） -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/vlc-web-plugin@latest/dist/vlc.js"
+    ></script>
+    <script src="https://jsmpeg.com/jsmpeg.min.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flv.js@1.6.2/dist/flv.min.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

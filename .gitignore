@@ -1,0 +1,28 @@
+# 完整忽略依赖包
+node_modules/
+
+# 构建产物
+dist/
+dist.zip
+build/
+
+# vite 依赖预构建缓存
+node_modules/.vite/
+
+# 各种 chunk js 产物、map 映射文件
+*.chunk.js
+*.chunk.js.map
+
+# 系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# 编辑器配置
+.idea/
+.vscode/
+
+# 日志
+*.log
